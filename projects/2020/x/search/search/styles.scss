@@ -1,0 +1,122 @@
+$google-font-color: #464646;
+$google-red: #d93429;
+$adv-search-gray: rgb(241, 241, 241);
+$border-gray: #ced4da;
+
+body {
+    font-family: arial, sans-serif;
+    background: #fff;
+    color: $google-font-color;
+    font-size: small;
+}
+ul {
+    li {
+        a {
+            color: $google-font-color;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $google-font-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+#adv-search-nav {
+    background-color: $adv-search-gray;
+    padding-left: 10px
+}
+
+#adv-search-title {
+    color: $google-red;
+    border-bottom: 1.5px solid $adv-search-gray; 
+    padding: 20px 0px 10px 46px;
+    font-size: larger;
+}
+
+#adv-search-subtitle {
+    padding: 20px 0px 0px 46px;
+}
+
+.adv-search-input {
+    padding: 0px 0px 0px 46px;
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+}
+
+#adv-search-btn {
+    color: #ffffff;
+    background-color: #4a8cf7;
+    border-color: #5390f0;
+    font-size: 10px;
+    border-radius: 2px;
+    padding: 4px 8px 4px 8px;
+    border: none;
+    margin: 0 0 0 50px;
+}
+
+.search-input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #212529;
+    border: 1px solid $border-gray;
+    border-radius: 25px;
+    margin: 0px 0px 25px 0;
+    background-image: url("magnifying_glass_gray.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    text-indent: 30px;   
+    outline: none;
+}
+
+.search-input:hover, .search-bar:active, .two-btns:hover {
+    border: 2px solid $border-gray;
+    box-shadow: 0 0 10px $border-gray;
+    outline: none;
+}
+
+.two-btns {
+    display: inline;
+}
+
+#index, #images {
+    form {
+        margin: 100px 0 0 0;
+    }
+}
+
+.input-line {
+    display: inline-flex;
+    button { 
+        background-color: rgba(0, 0, 0, 0.0);
+        color: #4b8bf4;
+        margin: 0 0 0 -50px;
+        padding: 0;
+        font-size: 20px;
+        width: 50%;
+        z-index: 2;
+        background-color: none;
+    }
+}
+
+.input-btn {
+    display: inline-block;
+    position: relative;
+    padding: 0;   
+}
+
+i:before {
+    left: 0;
+    position: relative;
+}
+
+#images {
+    button {
+    background-color: #fff;
+    border: none;
+    }
+}
