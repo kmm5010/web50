@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav id="adv-search-nav">
+            <div class="d-flex justify-content-end">
+                <a href="index.html" class="navbar-brand"><img class="nav-link" src="google_gray.jpg" height="45"></img></a> 
+            </div>
+        </nav>        
+        
+        <form action="https://google.com/search">
+            <div>
+            <div id="adv-search-title">
+                <p>Advanced Search</p>
+            </div>                
+            <p id="adv-search-subtitle">Find pages with...</p>            
+                <div class="adv-search-input row mb-3">
+                    <label class="col-sm-2" for="all">all these words:</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="q" id="all">
+                    </div>
+                </div>                 
+                <div class="adv-search-input row mb-3">
+                    <label class="col-sm-2" for="exact">this exact word or phrase:</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="as_epq" id="exact">
+                    </div>
+                </div>
+                <div class="adv-search-input row mb-3">
+                    <label class="col-sm-2" for="any">any of these words:</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="as_oq" id="any">
+                    </div>
+                </div>
+                <div class="adv-search-input row mb-3">
+                    <label class="col-sm-2" for="none">none of these words:</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" type="text" name="as_eq" id="none">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-sm-4">
+                    <input id="adv-search-btn" type="submit" value="Advanced search">
+                </div>                
+            </div>            
+        </form>       
+    </body>
+</html>
